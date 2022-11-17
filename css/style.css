@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-header {
+    height: 100vh;
+    background-color: black;
+}
+
+.header-main {
+    min-height: 60px;
+    text-align: end;
+    margin-right: 10px;
+    color: white;
+    padding-top: 30px;
+}
+
+.speaker-view, .logo-speaker {
+    background-color:#4a4a4a;
+    padding: 4px;
+    border-radius: 3px;
+}
+
+.container-zoom {
+    width: 100vw;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 80px;
+    position: relative;
+}
+.container-zoom div {
+    width: 170px;
+    height: 105px;
+    margin-left: 4px;
+    margin-top: 10px;
+    background-image: url('../img/mountain.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+div span {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 1px 4px;
+    font-size: 13px;
+}
+
+.container-zoom > div {
+    position: relative;
+}
+.container-zoom span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+/* footer */
+footer {
+    min-height: 50px;
+    width: 100vw;
+    background-color: rgba(34,34,34,255);
+    position: absolute;
+    bottom: 30px;
+}
