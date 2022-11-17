@@ -2,11 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 .container-header {
     height: 100vh;
     background-color: black;
+    overflow: scroll;
 }
 
 .header-main {
@@ -25,11 +27,11 @@
 
 .container-zoom {
     width: 100vw;
+    padding-left: 55px;
     margin: 0 auto;
     margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
-    margin-left: 80px;
     position: relative;
 }
 .container-zoom div {
@@ -64,5 +66,68 @@ footer {
     width: 100vw;
     background-color: rgba(34,34,34,255);
     position: absolute;
-    bottom: 30px;
+    bottom: 0px;
+    display: flex;
+    align-items: center;
+    color: white;
 }
+
+footer .mic-foot {
+    text-align: start;
+    color: white;
+    font-size: 18px;
+    flex-grow: 1;
+    display: flex;
+}
+footer > .mic-foot > div > p {
+    font-size: 12px;
+}
+.mic-foot > div {
+    padding-left: 7px;
+}
+.mic-foot > div > .microphone{
+    margin-left: 8px;
+}
+
+.mic-foot > div > .video{
+    margin-left: 20px;
+}
+
+.mic-foot {
+    align-items: center;
+}
+.items-foot {
+    align-items: center;
+}
+.end-foot {
+    align-items: center;
+}
+
+/* regole items-foot */
+.items-foot {
+    flex-grow: 2;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-right: 20px;
+    font-size: 13px;
+}
+.items-foot > div {
+    padding-left: 12px;
+}
+
+.end-foot {
+    flex-grow: 1;
+    text-align: end;
+    color: red;
+    align-items: center;
+}
+
+.end-foot > div {
+    background-color: #4a4a4a;
+    flex-grow: 0;
+    height: 100%;
+    display: inline-block;
+    padding: 20px 10px;
+}
+
